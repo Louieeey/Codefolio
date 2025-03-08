@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+}
+
+.footer {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer p{
+    font-size: 0.8em;
+    position: relative; /* Keeps it inside Contact */
+    padding-left: 25px;
+    font-size: 1rem;
+}
+  

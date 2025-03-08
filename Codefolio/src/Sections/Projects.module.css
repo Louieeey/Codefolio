@@ -1,0 +1,121 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    
+}
+
+.frame{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 95vw;
+}
+
+.container{
+    display: flex;
+    height: 65vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.container div{
+    border: 2px solid cyan;
+}
+
+.box{
+    width: 400px;
+    height: 200px;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.box h2{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.box p{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media(max-width: 1775px) {
+    .box{width: 350px; height: 175px;}
+    .box h2{font-size: 1.5rem;}
+    .box p{font-size: 0.8rem;}
+}
+
+@media(max-width: 1530px) {
+    .box{width: 300px; height: 150px;}
+    .box h2{font-size: 1rem;}
+    .box p{font-size: 0.7rem;}
+    .container{height: 55vh;}
+}
+
+@media(max-width: 1310px) {
+    .box{width: 250px; height: 125px;}
+    .box h2{font-size: 1.25rem;}
+    .box p{font-size: 0.7rem;}
+    .container{height: 53vh;}
+}
+
+@media(max-width: 1125px) {
+    .box{width: 225px; height: 113px;}
+    .box h2{font-size: 1rem;}
+    .box p{font-size: 0.6rem;}
+    .container{height: 46vh;}
+}
+
+@media(max-width: 990px) {
+    .box{width: 200px; height: 100px;}
+    .box h2{font-size: 0.9rem;}
+    .box p{font-size: 0.6rem;}
+    .container{height: 44vh;}
+}
+
+@media(max-width: 880px) {
+    .box{width: 175px; height: 88px;}
+    .box h2{font-size: 0.8rem;}
+    .box p{font-size: 0.6rem;}
+    .container{height: 43vh;}
+}
+
+@media(max-width: 780px) {
+    .box{width: 150px; height: 76px;}
+    .box h2{font-size: 0.7rem;}
+    .box p{font-size: 0.6;}
+    .container{height: 44vh;}
+}
+
+@media(max-width: 665px) {
+    .box{width: 125px; height: 64px;}
+    .box h2{font-size: 0.6rem;}
+    .box p{font-size: 0.5rem;}
+    .container{height: 38vh;}
+}
+
+@media(max-width: 560px) {
+    .box{width: 113px; height: 58px;}
+    .box h2{font-size: 0.6rem;}
+    .box p{font-size: 0.5rem;}
+    .container{height: 38vh;}
+}
+
+@media(max-width: 495px) {
+    .box{width: 95px; height: 45px;}
+    .box h2{font-size: 0.6rem;}
+    .box p{font-size: 0.5rem;}
+    .container{height: 38vh;}
+}

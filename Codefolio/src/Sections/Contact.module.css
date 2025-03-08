@@ -1,0 +1,97 @@
+.section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 60vw;
+    height: 70vh;
+    margin-top: 150px;
+    background-color: #181818;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: auto;
+}
+
+.box {
+    display: flex;
+}
+
+.box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.box li{
+    display: flex;
+    position: relative;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    list-style-type: none;
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+.box img{
+    height: 35px;
+    padding-right: 25px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.container::after, .container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, white, cyan);
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    animation: 5s spin linear infinite;
+}
+
+.container::before{
+    filter: blur(1.5em)
+    opacity(0.5)
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg
+    }
+    to{
+        --angle: 360deg
+    }
+}
+
+@media(max-width: 1024px) { /* Large laptops */
+    .container{height: 60vh;}
+    .box li{font-size: 1rem;}
+}
+
+@media(max-width: 730px) { /* Small laptops */
+    .container{height: 50vh;}
+    .box li{font-size: 0.8rem; padding-top: 10px;}
+}
+
+@media(max-width: 490px) { /* Tablets */
+    .container{height: 45vh;}
+    .box li{font-size: 0.5rem; padding-top: 5px;}
+}
