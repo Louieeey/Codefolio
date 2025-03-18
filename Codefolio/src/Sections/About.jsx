@@ -5,7 +5,7 @@ import styles from "./About.module.css";
 function About() {
 
     const stack = ["HTML", "CSS", "Javascript", "NodeJS", "ReactJS"];
-    const tools = ["Github", "NPM", "Git", "MySQL"];
+    const tools = ["Github", "NPM", "Git", "Vercel", "VS Code"];
     const [activeTab, setActiveTab] = useState("techStack");
 
     return (
@@ -17,7 +17,7 @@ function About() {
                     </div>
                     <div className={styles.desc}>
                         <p>My job is to build your website to be functional and user-friendly yet still attractive. In addition, I provide a personal touch to your product and ensure that the website catches attention and is easy to use.</p>
-                        <br />
+                        <br/>
                         <p>My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please reach me through the listed contact.</p>
                     </div>
                 </div>
@@ -41,6 +41,7 @@ function About() {
                             <button className={styles.contbtn}>{tools[1]}</button>
                             <button className={styles.contbtn}>{tools[2]}</button>
                             <button className={styles.contbtn}>{tools[3]}</button>
+                            <button className={styles.contbtn}>{tools[4]}</button>
                         </div>
                     )}
                 </div>

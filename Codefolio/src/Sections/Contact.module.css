@@ -60,7 +60,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), transparent 50%, white, cyan);
+    background-image: conic-gradient(from var(--angle), transparent 50%, grey, grey);
     z-index: -1;
     padding: 10px;
     border-radius: 10px;

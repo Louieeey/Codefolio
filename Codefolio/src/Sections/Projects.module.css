@@ -26,7 +26,7 @@
 }
 
 .container div{
-    border: 2px solid cyan;
+    border: 2px solid black;
 }
 
 .box{
@@ -41,13 +41,13 @@
 
 .box h2{
     font-family: 'Manrope', sans-serif;
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
 .box p{
     font-family: 'Manrope', sans-serif;
-    color: white;
+    color: black;
     font-size: 0.8rem;
 }
 
@@ -118,4 +118,8 @@
     .box h2{font-size: 0.6rem;}
     .box p{font-size: 0.5rem;}
     .container{height: 38vh;}
+}
+
+@media(max-width: 418px) {
+    .box{width: 85px; height: 45px;}
 }

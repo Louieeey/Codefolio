@@ -47,14 +47,14 @@
 }
 
 .card::before{
-    background-image: conic-gradient(from var(--angle1), transparent 45%, white, cyan);
+    background-image: conic-gradient(from var(--angle1), transparent 45%, grey, grey);
     animation: spin 5s linear infinite;
     opacity: 1;
     filter: blur(0.2rem)
 }
 
 .card::after{
-    background-image: conic-gradient(from var(--angle2), transparent 45%, white, cyan);
+    background-image: conic-gradient(from var(--angle2), transparent 45%, grey, grey);
     animation: spin 5s linear infinite;
     opacity: 1;
     filter: blur(0.2rem)
@@ -79,13 +79,13 @@
 
 .desc1{
     align-items: center;
-    color: white;
+    color: black;
 }
 
 .desc1 h2{
     font-family: 'Manrope', sans-serif;
     font-size: 50px;
-    background-image: linear-gradient(to left, white , #23f2f0);
+    background-image: linear-gradient(to left, grey , black);
     background-clip: text;
     color: transparent;
 }
@@ -116,7 +116,7 @@ p span::before{
     left: 0;
     width: 0;
     height: 100%;
-    color: white;
+    color: black;
     -webkit-text-stroke: 0vw #383d52;
     border-right: 0px solid white;
     overflow: hidden;
@@ -131,7 +131,7 @@ p span::after{
     left: 0;
     width: 0;
     height: 100%;
-    color: white;
+    color: black;
     -webkit-text-stroke: 0vw #383d52;
     border-right: 0px solid white;
     overflow: hidden;
@@ -191,6 +191,15 @@ p span::after{
 @media(max-width: 524px) { /* Small phones */
     .card{width: 150px; height: 150px;}
     .frame img{width: 150px; height: 150px;}
+    .desc1 h2{font-size: 12px;}
+    .desc1 p{font-size: 7px;}
+    .desc2{width: 175px;}
+    p span{font-size: 12px;}
+}
+
+@media(max-width: 430px) { /* Small phones */
+    .card{width: 125px; height: 125px;}
+    .frame img{width: 125px; height: 125px;}
     .desc1 h2{font-size: 12px;}
     .desc1 p{font-size: 7px;}
     .desc2{width: 175px;}
